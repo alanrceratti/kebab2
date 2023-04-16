@@ -9,10 +9,31 @@
 
   
 }
+
+::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
+  border-radius: 10px;
+  }
+::-webkit-scrollbar-track {
+  background: #111;
+  }
+::-webkit-scrollbar-thumb {
+  background: #93ff0a;
+  border-radius: 10px;
+  }
+
+  
+
+
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  scrollbar-width: thin;
+scrollbar-color: #93ff0a #111;
 }
 
 
