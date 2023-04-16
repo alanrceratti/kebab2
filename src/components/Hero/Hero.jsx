@@ -12,7 +12,7 @@ const Hero = () => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className="object-cover font-extrabold overflow-hidden"
+			className="object-cover font-bold overflow-hidden"
 		>
 			<Splide
 				options={{
