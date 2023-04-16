@@ -9,6 +9,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				aclonica: ['var(--aclonica-font)'],
+				inter: ['var(--inter-font)'],
 			},
 			colors: {
 				green: '#93ff0a',

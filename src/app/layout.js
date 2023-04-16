@@ -1,6 +1,6 @@
 import Header from '@/components/Header/Header';
 import './globals.css';
-import { Aclonica } from 'next/font/google';
+import { Aclonica, Inter } from 'next/font/google';
 
 export const metadata = {
 	title: 'Greek Bite',
@@ -14,10 +14,17 @@ const aclonica = Aclonica({
 	display: 'swap',
 });
 
+const inter = Inter({
+	variable: '--inter-font',
+	subsets: ['latin'],
+	weight: '400',
+	display: 'swap',
+});
+
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" className={`${aclonica.variable}`}>
-			<body>
+		<html lang="en" className={`${aclonica.variable} ${inter.variable}`}>
+			<body className="bg-darkGray">
 				<Header />
 				{children}
 			</body>
