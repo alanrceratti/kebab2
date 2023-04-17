@@ -88,7 +88,7 @@ const Header = () => {
 							}
 							href={"/location"}
 						>
-							Location
+							Our Location
 						</Link>
 						<Link
 							className={
