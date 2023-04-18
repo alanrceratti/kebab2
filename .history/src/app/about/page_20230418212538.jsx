@@ -28,8 +28,8 @@ const About = () => {
 							Our founder, Maria, grew up in a small village in
 							Greece and learned to cook from her grandmother and
 							mother. She opened our food truck to share homemade
-							Greek cuisine with the masses, and we&apos;ve since
-							expanded to a brick-and-mortar location.{" "}
+							Greek cuisine with the masses, and we`&apos;`ve
+							since expanded to a brick-and-mortar location.{" "}
 						</p>
 
 						<p className=" ">
