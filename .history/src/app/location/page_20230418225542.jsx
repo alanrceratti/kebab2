@@ -40,13 +40,13 @@ const Location = () => {
 					<h3 className="text-base md:text-lg font-bold mb-4">
 						Opening <span className="text-green">hours</span>:
 					</h3>
-					<p className="text-md md:text-lg w-auto mb-16">
+					<p className="text-md md: text-lg w-auto mb-16">
 						Monday - Thursday: 11:00am - 9:00pm<br></br>Friday -
 						Saturday: 11:00am - 10:00pm<br></br>Sunday: Closed
 					</p>
 				</div>
 				<iframe
-					className="sm:hidden rounded-2xl m-auto 2xl: "
+					className="sm: hidden  rounded-2xl m-auto "
 					width={350}
 					height={350}
 					title="map"
@@ -55,18 +55,9 @@ const Location = () => {
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.28129781798!2d-2.5289239229619684!3d53.49917026327752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b03d8820d16c7%3A0xbe6b0660b55e53f4!2sGreek%20Traditional%20Eatery%20Leeds!5e0!3m2!1sen!2suk!4v1681766363112!5m2!1sen!2suk"
 				></iframe>
 				<iframe
-					className="hidden rounded-2xl  2xl: sm:max-lg:block col-start-3 col-end-5 row-start-1 row-end-3  ml-auto mr-auto  "
+					className="hidden rounded-2xl  2xl: sm:block col-start-3 col-end-5 row-start-1 row-end-3  "
 					width={500}
 					height={350}
-					title="map"
-					loading="lazy"
-					allowFullScreen
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.28129781798!2d-2.5289239229619684!3d53.49917026327752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b03d8820d16c7%3A0xbe6b0660b55e53f4!2sGreek%20Traditional%20Eatery%20Leeds!5e0!3m2!1sen!2suk!4v1681766363112!5m2!1sen!2suk"
-				></iframe>
-				<iframe
-					className="hidden rounded-2xl  2xl: lg:block col-start-2 col-end-5 row-start-1 row-end-3  ml-auto mr-auto  "
-					width={600}
-					height={450}
 					title="map"
 					loading="lazy"
 					allowFullScreen

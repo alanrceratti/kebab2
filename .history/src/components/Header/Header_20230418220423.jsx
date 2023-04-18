@@ -121,7 +121,7 @@ const Header = () => {
 						<AiOutlineClose
 							className="z-20 absolute right-12 top-12"
 							color="white"
-							size={25}
+							size={40}
 						/>
 					) : (
 						<AiOutlineMenu
