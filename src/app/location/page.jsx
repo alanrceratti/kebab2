@@ -1,6 +1,6 @@
-"use client";
-import React from "react";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import Image from 'next/image';
 
 const Location = () => {
 	return (
@@ -13,14 +13,13 @@ const Location = () => {
 				</div>
 				<div className="font-inter w-5/12 m-10 lg:text-lg md:text-xl ">
 					<p className="before:block before:bg-green before:w-[5px] before:h-[25px] before:relative before:left-[-10px] before:top-6 mb-5">
-						Visit us at our brick-and-mortar location to experience
-						the vibrant flavors of Greece in a warm and welcoming
-						atmosphere.
+						Visit us at our brick-and-mortar location to experience the vibrant
+						flavors of Greece in a warm and welcoming atmosphere.
 					</p>
 					<p>
-						Our restaurant is located in the heart of downtown,
-						where you can enjoy traditional Greek dishes made with
-						fresh, locally sourced ingredients.
+						Our restaurant is located in the heart of downtown, where you can
+						enjoy traditional Greek dishes made with fresh, locally sourced
+						ingredients.
 					</p>
 				</div>
 			</div>
@@ -30,16 +29,15 @@ const Location = () => {
 						Our<span className="text-green"> Address</span>:
 					</h2>
 					<h3 className="text-xl w-2/5">
-						Greek Bites,<br></br>123 Main Street<br></br>{" "}
-						Manchester,
+						Greek Bites,<br></br>123 Main Street<br></br> Manchester,
 						<br></br> M1 1AB<br></br> United Kingdom
 					</h3>
 				</div>
 
 				<iframe
-					className="col-start-2 col-end-5 row-start-1 row-end-3 pr-10 pb-10  rounded-2xl m-auto w-8/12 h-250 "
-					// width={700}
-					height={500}
+					className=" rounded-2xl m-auto "
+					width={714}
+					height={509}
 					title="map"
 					loading="lazy"
 					allowFullScreen
@@ -51,8 +49,8 @@ const Location = () => {
 						Opening <span className="text-green">hours</span>:
 					</h3>
 					<p className="text-xl w-auto">
-						Monday - Thursday: 11:00am - 9:00pm<br></br>Friday -
-						Saturday: 11:00am - 10:00pm<br></br>Sunday: Closed
+						Monday - Thursday: 11:00am - 9:00pm<br></br>Friday - Saturday:
+						11:00am - 10:00pm<br></br>Sunday: Closed
 					</p>
 				</div>
 			</div>
