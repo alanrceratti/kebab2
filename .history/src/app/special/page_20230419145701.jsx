@@ -170,8 +170,7 @@ sm:w-[400px] md:w-[600px] m-auto  "
 						</div>
 					</div>
                     <div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 lg:flex lg:flex-wrap lg:w-11/12">
-                  
-						<div className=" pt-32 col-start-3 col-end-4 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
+						<div className=" pt-32 col-start-1 col-end-3 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
 							<h1 className="text-6xl font-aclonica ">
 								GY<span className="text-green">ROS</span>
 							</h1>
@@ -297,7 +296,7 @@ sm:w-[400px] md:w-[600px] m-auto  "
 					</div>
 			
 						
-				
+					</div>
 				</div>
 			</main>
 		</section>
