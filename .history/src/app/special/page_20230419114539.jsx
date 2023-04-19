@@ -85,16 +85,14 @@ const OurSpecial = () => {
 						</details>
 					</div>
 
-					<Image
+					<img
 						className=" hidden md:flex md:max-w-[145px] md:w-full  max-h-[159px] "
 						src="/about/dot.svg"
 						alt="dots_svg"
-						width={300}
-						height={300}
 					/>
 
-					<div className="col-start-1 col-end-3 row-start-2 row-end-3 relative ">
-						<Image
+					<div className="col-start-1 col-end-3 row-start-2 row-end-3  ">
+						<Image c
 							src="/food/gyros.png"
 							alt="gyros"
 							width={300}

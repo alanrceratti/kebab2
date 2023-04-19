@@ -39,6 +39,7 @@ const OurSpecial = () => {
 							<summary>Nutritional Information</summary>
 							<div>
 								<table className="ml-1 w-44">
+                                    
 									<tr className="border-2 text-gray-400 ">
 										<td>Calories:</td>
 										<td className="text-right">500kcal</td>

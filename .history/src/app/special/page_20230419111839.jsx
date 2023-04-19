@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const OurSpecial = () => {
 	return (
@@ -68,6 +67,10 @@ const OurSpecial = () => {
 										<td>Carbohydrate:</td>
 										<td className="text-right">47g</td>
 									</tr>
+								</table>
+							</div>
+							<div>
+								<table className="ml-1 w-44 text-left ">
 									<tr className="border-l-2 text-gray-400 border-r-2">
 										<td>Dietary Fiber:</td>
 										<td className="text-right">4g</td>
@@ -76,6 +79,7 @@ const OurSpecial = () => {
 										<td>Sugars:</td>
 										<td className="text-right">6g</td>
 									</tr>
+
 									<tr className="border-2 text-gray-400">
 										<td>Protein:</td>
 										<td className="text-right">29g</td>
@@ -83,15 +87,13 @@ const OurSpecial = () => {
 								</table>
 							</div>
 						</details>
-					</div>
 
-					<Image
-						className=" hidden md:flex md:max-w-[145px] md:w-full  max-h-[159px] "
-						src="/about/dot.svg"
-						alt="dots_svg"
-						width={300}
-						height={300}
-					/>
+						<img
+							className=" hidden md:flex md:max-w-[145px] md:w-full  max-h-[159px] "
+							src="/about/dot.svg"
+							alt="dots_svg"
+						/>
+					</div>
 
 					<div className="col-start-1 col-end-3 row-start-2 row-end-3 relative ">
 						<Image
@@ -102,25 +104,64 @@ const OurSpecial = () => {
 							className="rounded-xl"
 						/>
 						<div>
-							<p className="absolute left-2 bottom-12 text-xs text-gray-500">
+							<p className="absolute left-2 bottom-8 text-xs text-gray-500">
 								*Illustrative image
 							</p>
-							<p className="font-inter font-extrabold text-lg text-center absolute top-0 ml-2 ">
+							<p className="font-inter font-extrabold text-lg ">
 								Only <span className="text-green ">£7.99</span>
 							</p>
 						</div>
-						<div className="text-center mt-2">
-							<Link href={"/location"}>
-								<button className="h-8 w-32 sm:h-16 sm:w-60 text-base bg-green text-black font-bold transition-all ease-in-out duration-500 hover:bg-black hover:border hover:border-green hover:text-green">
-									ORDER NOW
-								</button>
-							</Link>
-						</div>
 					</div>
-				</div>
 
-				<div>
-					<div className="pt-24 col-start-1 col-end-3 row-start-5 row-end-6 "></div>
+					{/* <div>
+						<h1>
+							What&apos;s <span>inside</span>?
+						</h1>
+						<p>
+							Meat (pork or chicken),Salt, Pepper, Garlic powder,
+							Onion powder, Oregano, Thyme, Olive oil (for
+							marinade), Pita bread, Tomatoes, Onions, Tzatziki
+							sauce (yogurt, cucumber, garlic, dill, lemon juice,
+							salt)
+						</p>
+					</div> */}
+
+					<div className="hidden">
+						<img src="/food/gyros.png" alt="gyros" />
+						<h2>Gyros</h2>
+						<p>
+							Greek gyros served in a warm pita with fresh veggies
+							and tangy tzatziki sauce.
+						</p>
+						<p>£7.99</p>
+					</div>
+					<div className="col-start-1 col-end-3 row-start-5 row-end-6 ">
+						<img src="/food/souvlaki.png" alt="Souvlaki" />
+						<h2>Souvlaki</h2>
+						<p>
+							Greek grilled souvlaki skewers served with pita,
+							veggies, and tzatziki sauce.
+						</p>
+						<p>£7.99</p>
+					</div>
+					<div className="col-start-1 col-end-3 row-start-6 row-end-7">
+						<img src="/food/salad.png" alt="Salad" />
+						<h2>Greek Salad</h2>
+						<p>
+							Greek grilled souvlaki skewers served with pita,
+							veggies, and tzatziki sauce.
+						</p>
+						<p>£7.99</p>
+					</div>
+					<div className="col-start-1 col-end-3 row-start-7 row-end-8">
+						<img src="/food/burger.png" alt="Burger" />
+						<h2>Burger</h2>
+						<p>
+							Greek grilled souvlaki skewers served with pita,
+							veggies, and tzatziki sauce.
+						</p>
+						<p>£7.99</p>
+					</div>
 				</div>
 			</main>
 		</section>

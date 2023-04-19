@@ -39,46 +39,52 @@ const OurSpecial = () => {
 							<summary>Nutritional Information</summary>
 							<div>
 								<table className="ml-1 w-44">
-									<tr className="border-2 text-gray-400 ">
-										<td>Calories:</td>
-										<td className="text-right">500kcal</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Total Fat:</td>
-										<td className="text-right"> 22g</td>
-									</tr>
+									<tr>
+										<tr className="border-2 text-gray-400 ">
+											<td>Calories:</td>
+											<td className="text-right">
+												500kcal
+											</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Total Fat:</td>
+											<td className="text-right"> 22g</td>
+										</tr>
 
-									<tr className="border-2 text-gray-400">
-										<td>Saturated Fat:</td>
-										<td className="text-right">6g</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Trans Fat: </td>
-										<td className="text-right">0g</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Cholesterol: </td>
-										<td className="text-right">70mg</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Sodium: </td>
-										<td className="text-right">1180mg</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Carbohydrate:</td>
-										<td className="text-right">47g</td>
-									</tr>
-									<tr className="border-l-2 text-gray-400 border-r-2">
-										<td>Dietary Fiber:</td>
-										<td className="text-right">4g</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Sugars:</td>
-										<td className="text-right">6g</td>
-									</tr>
-									<tr className="border-2 text-gray-400">
-										<td>Protein:</td>
-										<td className="text-right">29g</td>
+										<tr className="border-2 text-gray-400">
+											<td>Saturated Fat:</td>
+											<td className="text-right">6g</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Trans Fat: </td>
+											<td className="text-right">0g</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Cholesterol: </td>
+											<td className="text-right">70mg</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Sodium: </td>
+											<td className="text-right">
+												1180mg
+											</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Carbohydrate:</td>
+											<td className="text-right">47g</td>
+										</tr>
+										<tr className="border-l-2 text-gray-400 border-r-2">
+											<td>Dietary Fiber:</td>
+											<td className="text-right">4g</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Sugars:</td>
+											<td className="text-right">6g</td>
+										</tr>
+										<tr className="border-2 text-gray-400">
+											<td>Protein:</td>
+											<td className="text-right">29g</td>
+										</tr>
 									</tr>
 								</table>
 							</div>

@@ -85,12 +85,10 @@ const OurSpecial = () => {
 						</details>
 					</div>
 
-					<Image
+					<img
 						className=" hidden md:flex md:max-w-[145px] md:w-full  max-h-[159px] "
 						src="/about/dot.svg"
 						alt="dots_svg"
-						width={300}
-						height={300}
 					/>
 
 					<div className="col-start-1 col-end-3 row-start-2 row-end-3 relative ">
@@ -102,7 +100,7 @@ const OurSpecial = () => {
 							className="rounded-xl"
 						/>
 						<div>
-							<p className="absolute left-2 bottom-12 text-xs text-gray-500">
+							<p className="absolute left-2 bottom-0 text-xs text-gray-500">
 								*Illustrative image
 							</p>
 							<p className="font-inter font-extrabold text-lg text-center absolute top-0 ml-2 ">
