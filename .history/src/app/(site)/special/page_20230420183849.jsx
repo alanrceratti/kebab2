@@ -7,29 +7,40 @@ import { getDocument, getOffers } from "../../../../sanity/sanity-utils";
 import { useEffect } from "react";
 import { useState } from "react";
 import useMedia from "@/hooks/useMedia";
-import sanityClient from "@sanity/client";
 
 function OurSpecial() {
 	const [selectedOffer, setSelectedOffer] = useState([]);
-	// const [newOffers, setNewOffers] = useState([]);
+	const [newOffers, setNewOffers] = useState([]);
 	const [data, setData] = useState([]);
 	const mobile = useMedia("(min-width: 1280px)");
 	const [newDocument, SetNewDocument] = useState(0);
 	const documentId = newDocument;
 
 	async function FetchOffer() {
-		const offers = await getOffers();
-		setData(offers);
+		try {
+			const offers = await getOffers();
+			setData(offers);
+		} catch (error) {
+			console.error(error);
+			// handle error here
+		}
 	}
 
-	async function FetchDocument() {
-		const document = await getDocument();
-		setData(document);
+	async function FetchDocument(id) {
+		try {
+			const document = await getDocument(id);
+			setNewOffers(document);
+			console.log(document);
+		} catch (error) {
+			console.error(error);
+			// handle error here
+		}
 	}
 
 	function handleClick(e) {
-		SetNewDocument(e.target.dataset.id);
-		FetchDocument();
+		const newDocumentId = e.target.dataset.id;
+		FetchDocument(newDocumentId);
+		// console.log(typeof newDocumentId, newDocumentId);
 	}
 
 	useEffect(() => {
@@ -226,9 +237,7 @@ function OurSpecial() {
 													<div className="col-start-1 col-end-2 row-start-2 row-end-3 relative w-[280px] h-[280px] m-auto  ">
 														<Image
 															src={offer.image}
-															alt={
-																offer.image.alt
-															}
+															alt={offer.name}
 															width={300}
 															height={300}
 															className="rounded-xl aspect-square object-cover object-right-top  "
@@ -267,7 +276,7 @@ function OurSpecial() {
 									<div className="hidden lg:block lg:col-start-2 col-end-3 mt-24">
 										<Image
 											src={offer.image}
-											alt={offer.image.alt}
+											alt={offer.name}
 											width={300}
 											height={300}
 											className="rounded-xl aspect-square object-cover object-right-top  "
@@ -286,14 +295,17 @@ function OurSpecial() {
 								<div className="lg:block lg:grid-cols-1">
 									<div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 lg:grid lg:grid-flow-col lg:w-11/12">
 										<div className=" pt-32 col-start-1 col-end-3 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
-											<h1 className="text-5xl font-aclonica bg-gradient-to-r from-white from-0% via-white via-35%  to-green to-20% bg-clip-text text-transparent">
-												{data[0]?.name}
+											<h1 className="text-5xl font-aclonica bg-gradient-to-r from-white from-0% via-white via-25%  to-green to-0% bg-clip-text text-transparent">
+												{data && newOffers.length < !0
+													? data[0]?.name
+													: newOffers[0]?.name}
 											</h1>
 
 											<p className="mt-4 ">
-												{data
+												{data && newOffers.length < !0
 													? data[0]?.long_description
-													: data.long_description}
+													: newOffers[0]
+															?.long_description}
 											</p>
 										</div>
 										<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12  mt-8 lg:col-end-2 lg:row-start-2 lg:row-end-3 ">
@@ -305,7 +317,9 @@ function OurSpecial() {
 												?
 											</h1>
 											<p className="mt-4 ">
-												{data[0]?.ingredients}
+												{data && newOffers.length < !0
+													? data[0]?.ingredients
+													: newOffers[0]?.ingredients}
 											</p>
 										</div>
 										<div className="flex col-start-1 col-end-3 row-start-4 row-end-5 text-gray-500 text-sm font-inter mt-4">
@@ -319,17 +333,31 @@ function OurSpecial() {
 														<tr className="border-2 text-gray-400 ">
 															<th>Calories:</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.calories
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.calories
+																	: newOffers[0]
+																			?.nutritional
+																			.calories}
 																g
 															</td>
 														</tr>
 														<tr className="border-2 text-gray-400">
 															<th>Total Fat:</th>
 															<td className="text-right">
-																{data[0]?.fat}g
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.fat
+																	: newOffers[0]
+																			?.nutritional
+																			.fat}
+																g
 															</td>
 														</tr>
 
@@ -338,20 +366,30 @@ function OurSpecial() {
 																Saturated Fat:
 															</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.saturated_fat
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.saturated_fat
+																	: newOffers[0]
+																			?.nutritional
+																			.saturated_fat}
 																g
 															</td>
 														</tr>
 														<tr className="border-2 text-gray-400">
 															<th>Trans Fat: </th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.trans_fat
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.trans_fat
+																	: newOffers[0]
+																			?.nutritional
+																			.trans_fat}
 																g
 															</td>
 														</tr>
@@ -360,20 +398,30 @@ function OurSpecial() {
 																Cholesterol:
 															</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.cholesterol
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.cholesterol
+																	: newOffers[0]
+																			?.nutritional
+																			.cholesterol}
 																mg
 															</td>
 														</tr>
 														<tr className="border-2 text-gray-400">
 															<th>Sodium:</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.sodium
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.sodium
+																	: newOffers[0]
+																			?.nutritional
+																			.sodium}
 																mg
 															</td>
 														</tr>
@@ -382,10 +430,15 @@ function OurSpecial() {
 																Carbohydrate:
 															</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.carbohydrate
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.carbohydrate
+																	: newOffers[0]
+																			?.nutritional
+																			.carbohydrate}
 																g
 															</td>
 														</tr>
@@ -394,24 +447,45 @@ function OurSpecial() {
 																Dietary Fiber:
 															</th>
 															<td className="text-right">
-																{
-																	data[0]
-																		?.dietary_fiber
-																}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.dietary_fiber
+																	: newOffers[0]
+																			?.nutritional
+																			.dietary_fiber}
 																g
 															</td>
 														</tr>
 														<tr className="border-2 text-gray-400">
 															<th>Sugars:</th>
 															<td className="text-right">
-																{data[0]?.sugar}
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.sugar
+																	: newOffers[0]
+																			?.nutritional
+																			.sugar}
 																g
 															</td>
 														</tr>
 														<tr className="border-2 text-gray-400">
 															<th>Protein:</th>
 															<td className="text-right">
-																29 g
+																{data &&
+																newOffers.length <
+																	!0
+																	? data[0]
+																			?.nutritional
+																			.protein
+																	: newOffers[0]
+																			?.nutritional
+																			.protein}
 															</td>
 														</tr>
 													</tbody>
@@ -422,8 +496,16 @@ function OurSpecial() {
 								</div>
 								<div className="hidden lg:block lg:col-start-2 col-end-3 mt-24">
 									<Image
-										src={data[0]?.image}
-										alt={data[0]?.image_alt}
+										src={
+											data && newOffers.length < !0
+												? data[0]?.image
+												: newOffers[0]?.image
+										}
+										alt={
+											data && newOffers.length < !0
+												? data[0]?.name
+												: newOffers[0]?.name
+										}
 										width={300}
 										height={300}
 										className="rounded-xl aspect-square object-cover object-right-top  "
@@ -438,7 +520,7 @@ function OurSpecial() {
 													data-id={offer._id}
 													key={offer._id}
 													src={offer.image}
-													alt={offer.image.alt}
+													alt={offer.name}
 													width={150}
 													height={150}
 													className="rounded-xl aspect-square object-cover object-right-top cursor-pointer  "
