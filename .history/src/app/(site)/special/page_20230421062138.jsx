@@ -66,8 +66,9 @@ function OurSpecial() {
 								className="text-white ml-10 mr-10"
 								key={offer._id}
 							>
-								
-										<div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 ">
+								<div className="lg:grid lg:auto-cols-auto lg:pt-10">
+									<div className="lg:block lg:grid-cols-1">
+										<div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 lg:grid lg:grid-flow-col lg:w-11/12">
 											<div className=" pt-32 col-start-1 col-end-3 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
 												<h1 className="text-5xl font-aclonica bg-gradient-to-r from-white from-0% via-white via-35%  to-green to-20% bg-clip-text text-transparent">
 													{offer.name}
@@ -77,7 +78,7 @@ function OurSpecial() {
 													{offer.long_description}
 												</p>
 											</div>
-											<div className="lg:hidden  lg:col-start-2 col-end-3 mt-4">
+											<div className="lg:hidden  lg:col-start-2 col-end-3 mt-24">
 												<Image
 													src={offer.image}
 													alt={offer.name}
@@ -86,7 +87,7 @@ function OurSpecial() {
 													className="rounded-xl aspect-square object-cover object-right-top  "
 												/>
 											</div>
-											<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12 ">
+											<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12  mt-8 lg:col-end-2 lg:row-start-2 lg:row-end-3 ">
 												<h1 className="text-2xl font-inter font-bold mt-10 ">
 													What&apos;s
 													<span className="text-green">
@@ -250,7 +251,8 @@ function OurSpecial() {
 											</div>
 										</div>
 									</div>
-								
+								</div>
+							</div>
 						);
 					})}
 				</section>
