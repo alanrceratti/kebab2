@@ -66,211 +66,191 @@ function OurSpecial() {
 								className="text-white ml-10 mr-10"
 								key={offer._id}
 							>
-								<div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 ">
-									<div className=" pt-32 col-start-1 col-end-3 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
-										<h1 className="text-5xl font-aclonica bg-gradient-to-r from-white from-0% via-white via-35%  to-green to-20% bg-clip-text text-transparent">
-											{offer.name}
-										</h1>
+								
+										<div className=" grid grid-cols-1 auto-rows-auto grid-flow-row gap-2 ">
+											<div className=" pt-32 col-start-1 col-end-3 row-start-1 row-end-2 mb-8 sm:w-8/12 ">
+												<h1 className="text-5xl font-aclonica bg-gradient-to-r from-white from-0% via-white via-35%  to-green to-20% bg-clip-text text-transparent">
+													{offer.name}
+												</h1>
 
-										<p className="mt-4 ">
-											{offer.long_description}
-										</p>
-									</div>
-									<div className="lg:hidden  lg:col-start-2 col-end-3 mt-4">
-										<Image
-											src={offer.image}
-											alt={offer.name}
-											width={300}
-											height={300}
-											className="rounded-xl aspect-square object-cover object-right-top  "
-										/>
-									</div>
-									<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12 ">
-										<h1 className="text-2xl font-inter font-bold mt-10 ">
-											What&apos;s
-											<span className="text-green">
-												inside
-											</span>
-											?
-										</h1>
-										<p className="mt-4 ">
-											{offer.ingredients}
-										</p>
-									</div>
-									<div className="flex col-start-1 col-end-3 row-start-4 row-end-5 text-gray-500 text-sm font-inter mt-4">
-										{nutriTable ? (
-											<details>
-												<summary>
-													Nutritional Information
-												</summary>
+												<p className="mt-4 ">
+													{offer.long_description}
+												</p>
+											</div>
+											<div className="lg:hidden  lg:col-start-2 col-end-3 mt-4">
+												<Image
+													src={offer.image}
+													alt={offer.name}
+													width={300}
+													height={300}
+													className="rounded-xl aspect-square object-cover object-right-top  "
+												/>
+											</div>
+											<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12 ">
+												<h1 className="text-2xl font-inter font-bold mt-10 ">
+													What&apos;s
+													<span className="text-green">
+														inside
+													</span>
+													?
+												</h1>
+												<p className="mt-4 ">
+													{offer.ingredients}
+												</p>
+											</div>
+											<div className="flex col-start-1 col-end-3 row-start-4 row-end-5 text-gray-500 text-sm font-inter mt-4">
+												{nutriTable ? (
+													<details>
+														<summary>
+															Nutritional
+															Information
+														</summary>
 
-												<table className="ml-1 w-44">
-													<tbody>
-														<tr className="border-2 text-gray-400 ">
-															<th>Calories:</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.calories
-																	: newOffers[0]
-																			?.nutritional
-																			.calories}
-																g
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>Total Fat:</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.fat
-																	: newOffers[0]
-																			?.nutritional
-																			.fat}
-																g
-															</td>
-														</tr>
+														<table className="ml-1 w-44">
+															<tbody>
+																<tr className="border-2 text-gray-400 ">
+																	<th>
+																		Calories:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				?.calories
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Total
+																		Fat:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.fat
+																		}
+																		g
+																	</td>
+																</tr>
 
-														<tr className="border-2 text-gray-400">
-															<th>
-																Saturated Fat:
-															</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.saturated_fat
-																	: newOffers[0]
-																			?.nutritional
-																			.saturated_fat}
-																g
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>Trans Fat: </th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.trans_fat
-																	: newOffers[0]
-																			?.nutritional
-																			.trans_fat}
-																g
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>
-																Cholesterol:
-															</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.cholesterol
-																	: newOffers[0]
-																			?.nutritional
-																			.cholesterol}
-																mg
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>Sodium:</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.sodium
-																	: newOffers[0]
-																			?.nutritional
-																			.sodium}
-																mg
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>
-																Carbohydrate:
-															</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.carbohydrate
-																	: newOffers[0]
-																			?.nutritional
-																			.carbohydrate}
-																g
-															</td>
-														</tr>
-														<tr className="border-l-2 text-gray-400 border-r-2">
-															<th>
-																Dietary Fiber:
-															</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.dietary_fiber
-																	: newOffers[0]
-																			?.nutritional
-																			.dietary_fiber}
-																g
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>Sugars:</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.sugar
-																	: newOffers[0]
-																			?.nutritional
-																			.sugar}
-																g
-															</td>
-														</tr>
-														<tr className="border-2 text-gray-400">
-															<th>Protein:</th>
-															<td className="text-right">
-																{data &&
-																newOffers.length <
-																	!0
-																	? data[0]
-																			?.nutritional
-																			.protein
-																	: newOffers[0]
-																			?.nutritional
-																			.protein}
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</details>
-										) : null}
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Saturated
+																		Fat:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.saturated_fat
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Trans
+																		Fat:{" "}
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.trans_fat
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Cholesterol:{" "}
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.cholesterol
+																		}
+																		mg
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Sodium:{" "}
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.sodium
+																		}
+																		mg
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Carbohydrate:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.carbohydrate
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-l-2 text-gray-400 border-r-2">
+																	<th>
+																		Dietary
+																		Fiber:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.dietary_fiber
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Sugars:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.sugar
+																		}
+																		g
+																	</td>
+																</tr>
+																<tr className="border-2 text-gray-400">
+																	<th>
+																		Protein:
+																	</th>
+																	<td className="text-right">
+																		{
+																			offer
+																				.nutritional
+																				.protein
+																		}
+																		g
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</details>
+												) : null}
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
+								
 						);
 					})}
 				</section>
