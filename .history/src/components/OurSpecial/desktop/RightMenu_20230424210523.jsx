@@ -22,7 +22,18 @@ const RightMenu = (props) => {
 									: " flex flex-row "
 							}`}
 						>
-							<div>
+							<div
+							// onClick={(e) => {
+							// 	e.preventDefault();
+							// 	router.push(
+							// 		`/special/${offer.name}`,
+							// 		undefined,
+							// 		{
+							// 			shallow: true,
+							// 		}
+							// 	);
+							// }}
+							>
 								<Image
 									onClick={props.handleClick}
 									data-id={offer._id}

@@ -22,7 +22,19 @@ const RightMenu = (props) => {
 									: " flex flex-row "
 							}`}
 						>
-							<div>
+							<div
+								// onClick={(e) => {
+								// 	e.preventDefault();
+								// 	router.push(
+								// 		`/special/${offer.name}`,
+								// 		undefined,
+								// 		{
+								// 			shallow: true,
+								// 		}
+								// 	);
+								// }}
+							>
+								<Link href=`"/special/"`>
 								<Image
 									onClick={props.handleClick}
 									data-id={offer._id}
@@ -33,6 +45,7 @@ const RightMenu = (props) => {
 									height={200}
 									className="rounded-xl aspect-[3/4] cursor-pointer ml-2 hover:opacity-60  "
 								/>
+								</Link>
 							</div>
 							<div className="basis-1/2 ml-4">
 								<h2

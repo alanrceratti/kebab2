@@ -22,17 +22,30 @@ const RightMenu = (props) => {
 									: " flex flex-row "
 							}`}
 						>
-							<div>
-								<Image
-									onClick={props.handleClick}
-									data-id={offer._id}
-									key={offer._id}
-									src={offer.image}
-									alt={offer.name}
-									width={150}
-									height={200}
-									className="rounded-xl aspect-[3/4] cursor-pointer ml-2 hover:opacity-60  "
-								/>
+							<div
+							// onClick={(e) => {
+							// 	e.preventDefault();
+							// 	router.push(
+							// 		`/special/${offer.name}`,
+							// 		undefined,
+							// 		{
+							// 			shallow: true,
+							// 		}
+							// 	);
+							// }}
+							>
+
+									<Image
+										onClick={props.handleClick}
+										data-id={offer._id}
+										key={offer._id}
+										src={offer.image}
+										alt={offer.name}
+										width={150}
+										height={200}
+										className="rounded-xl aspect-[3/4] cursor-pointer ml-2 hover:opacity-60  "
+									/>
+	
 							</div>
 							<div className="basis-1/2 ml-4">
 								<h2
