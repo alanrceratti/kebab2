@@ -81,12 +81,12 @@ function OurSpecial() {
 										/>
 									</div>
 								</InViewSectionLeft>
-								<InViewSectionDown>
+								<InViewSectionRight>
 									<ImageFood
 										image={offer.image}
 										name={offer.name}
 									/>
-								</InViewSectionDown>
+								</InViewSectionRight>
 								<InViewSectionLeft>
 									<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12 ">
 										<WhatsInside

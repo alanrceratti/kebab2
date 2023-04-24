@@ -1,7 +1,11 @@
 import Image from "next/image";
+
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const RightMenu = (props) => {
+
+
 	return (
 		<div className="hidden lg:block lg:col-start-3 col-end-4 mt-24 h-[668px]  overflow-y-scroll">
 			{props.data.map((offer) => {

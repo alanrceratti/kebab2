@@ -20,6 +20,7 @@ function OurSpecial() {
 	const [selectedOffer, setSelectedOffer] = useState([]);
 	const [newOffers, setNewOffers] = useState([]);
 	const [data, setData] = useState([]);
+	const [newDocument, SetNewDocument] = useState(0);
 
 	const mobile = useMedia("(min-width: 1280px)");
 	const nutriTable = newOffers[0]?.nutritional;
@@ -32,6 +33,7 @@ function OurSpecial() {
 			setData(offers);
 		} catch (error) {
 			console.error(error);
+			// handle error here
 		}
 	}
 	//function to fetch the clicked document option from Sanity.io
@@ -43,6 +45,7 @@ function OurSpecial() {
 			// console.log(newOffers[0]?.nutritional);
 		} catch (error) {
 			console.error(error);
+			// handle error here
 		}
 	}
 
@@ -81,12 +84,12 @@ function OurSpecial() {
 										/>
 									</div>
 								</InViewSectionLeft>
-								<InViewSectionDown>
+								<InViewSectionRight>
 									<ImageFood
 										image={offer.image}
 										name={offer.name}
 									/>
-								</InViewSectionDown>
+								</InViewSectionRight>
 								<InViewSectionLeft>
 									<div className=" col-start-1 col-end-3 row-start-3 row-end-4 sm:w-8/12 ">
 										<WhatsInside
