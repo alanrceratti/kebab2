@@ -35,9 +35,8 @@ const Form = () => {
 						<div className="mb-6">
 							<input
 								type="text"
-								required
 								className="block    
-                         
+                required            
               w-full
               px-3
               py-1.5
@@ -80,7 +79,7 @@ const Form = () => {
 						<div className="mb-6">
 							<textarea
 								className="
-            
+              required
               block
               w-full
               px-3
@@ -97,7 +96,6 @@ const Form = () => {
               focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
             "
 								rows="3"
-								required
 								placeholder="Message"
 							></textarea>
 						</div>
