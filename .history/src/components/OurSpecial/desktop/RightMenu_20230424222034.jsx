@@ -26,7 +26,7 @@ const RightMenu = (props) => {
 									alt={offer.name}
 									width={150}
 									height={200}
-									className="rounded-xl aspect-[3/4] object-cover cursor-pointer ml-2 hover:opacity-60  "
+									className="rounded-xl aspect-[3/4] contain cursor-pointer ml-2 hover:opacity-60  "
 								/>
 							</div>
 							<div className="basis-1/2 ml-4">
