@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 
 const Form = () => {
 	const form = useRef();
@@ -11,7 +10,7 @@ const Form = () => {
 		emailjs
 			.sendForm(
 				"service_iy6zn5f",
-				"template_8hm6p3f2",
+				"template_8hm6p3f",
 				form.current,
 				"GwS-FbYtihip9wEJV"
 			)

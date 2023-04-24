@@ -11,7 +11,7 @@ const Form = () => {
 		emailjs
 			.sendForm(
 				"service_iy6zn5f",
-				"template_8hm6p3f2",
+				"template_8hm6p3f",
 				form.current,
 				"GwS-FbYtihip9wEJV"
 			)
@@ -32,7 +32,7 @@ const Form = () => {
 				<div className="max-w-[700px] mx-auto px-3 lg:px-6">
 					<h2 className="text-3xl font-bold mb-12">Contact us!</h2>
 					<form ref={form} onSubmit={sendEmail}>
-						<div className="mb-6">
+						<div className="form- mb-6">
 							<input
 								type="text"
 								className="block                
