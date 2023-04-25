@@ -1,4 +1,8 @@
-# Greek Bites - Online Offers
+# [Greek Bites - Online Offers](https://kebab-nine.vercel.app)
+
+![Screenshot 2023-04-25 134855](https://user-images.githubusercontent.com/105820012/234281285-34e587d4-78af-4e35-82d8-3b7361f389c6.png)
+
+
 
 This was a personal project to apply new knowledge dealing with a CMS and also practice Git Versioning in a team.
 
@@ -9,6 +13,8 @@ The main purpose of this project is to provide users with a web-site where they 
 To accomplish this, we designed the web-site in Figma, carefully chosing the elements, fonts, colors and layout for a better UI/UX.
 
 The site allows users to go through all the quotes within a selected category without
+
+https://user-images.githubusercontent.com/105820012/234282098-3cef3355-b90f-44ed-a455-d56fe3b3c716.mp4
 
 ## Tech Stack
 
