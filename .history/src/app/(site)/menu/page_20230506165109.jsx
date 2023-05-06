@@ -41,26 +41,20 @@ const Menu = () => {
 					</li>
 				</ul>
 			</nav>
-			<div
-				className={`${
-					!media
-						? "max-w-[1340px] w-full ml-auto mr-auto"
-						: "max-w-[1000px] w-full ml-auto mr-auto"
-				}  `}
-			>
+			<div className="ml-auto mr-auto w-[1340px]">
 				<main className="block m-16 ">
 					<section
 						id="1"
 						className={`${
 							!media
-								? "grid grid-cols-[1fr_minmax(1px,_2px)_1fr]auto-rows-auto gap-4 mb-16 "
-								: "block mt-8 "
+								? "grid grid-cols-[1fr_minmax(1px,_2px)_1fr]auto-rows-auto gap-4 mb-16"
+								: "block "
 						}`}
 					>
-						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center mb-4 ">
+						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Souvlakis/Wraps
 						</h1>
-						<div className="  w-full row-start-2 row-end-3 col-start-1 col-end-2 ">
+						<div className="  w-full row-start-2 row-end-3 col-start-1 col-end-2">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Chicken Souvlaki</h2>
 								<p>
@@ -76,11 +70,7 @@ const Menu = () => {
 							</h3>
 						</div>
 
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
-						>
+						<div className=  {`w-full row-start-3 row-end-4 col-start-1 col-end-2`} >
 							<div className="flex justify-between font-inter text-base">
 								<h2>Lamb Souvlaki</h2>
 								<p>
@@ -96,11 +86,7 @@ const Menu = () => {
 							</h3>
 						</div>
 
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-4 row-end-5 col-start-1 col-end-2`}
-						>
+						<div className="  w-full row-start-4 row-end-5 col-start-1 col-end-2">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Pork Sausage Souvlaki</h2>
 								<p>
@@ -117,11 +103,7 @@ const Menu = () => {
 							</h3>
 						</div>
 
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-5 row-end-6 col-start-1 col-end-2`}
-						>
+						<div className="  w-full row-start-5 row-end-6 col-start-1 col-end-2">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Vegan Falafel Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
@@ -134,14 +116,9 @@ const Menu = () => {
 								handmade corn pita bread.
 							</h3>
 						</div>
-						{!media ? (
-							<span className="border-l-2 h-full w-auto border-green  col-start-2 col-end-3 row-start-2 row-end-6  "></span>
-						) : null}
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
-						>
+
+						<span className="border-l-2 h-full w-auto border-green  col-start-2 col-end-3 row-start-2 row-end-6  "></span>
+						<div className="  w-full row-start-2 row-end-3 col-start-3 col-end-4 ">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Vegetarian Halloumi Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
@@ -155,11 +132,7 @@ const Menu = () => {
 							</h3>
 						</div>
 
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-3 row-end-4 col-start-3 col-end-4`}
-						>
+						<div className="  w-full row-start-3 row-end-4 col-start-3 col-end-4">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Medium Mixed Souvlaki</h2>
 								<p>£7.90</p>
@@ -173,11 +146,7 @@ const Menu = () => {
 							</h3>
 						</div>
 
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-4 row-end-5 col-start-3 col-end-4`}
-						>
+						<div className="  w-full row-start-4 row-end-5 col-start-3 col-end-4">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Giant Mixed Souvlaki</h2>
 								<p>£10.00</p>
@@ -190,11 +159,7 @@ const Menu = () => {
 								bread.
 							</h3>
 						</div>
-						<div
-							className={`${
-								media ? "mt-8" : ""
-							} w-full row-start-5 row-end-6 col-start-3 col-end-4`}
-						>
+						<div className="  w-full row-start-5 row-end-6 col-start-3 col-end-4">
 							<div className="flex justify-between font-inter text-base">
 								<h2>Mixed Vegetarian</h2>
 								<p>£7.90</p>
@@ -211,11 +176,7 @@ const Menu = () => {
 
 					<section
 						id="2"
-						className={`${
-							!media
-								? "grid grid-cols-[1fr_minmax(1px,_2px)_1fr]auto-rows-auto gap-4 mb-16 "
-								: "block mt-16  "
-						}`}
+						className="grid grid-cols-[1fr_minmax(1px,_2px)_1fr] auto-rows-auto gap-4 mb-16 w-fit"
 					>
 						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Box Meals

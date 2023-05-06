@@ -41,23 +41,17 @@ const Menu = () => {
 					</li>
 				</ul>
 			</nav>
-			<div
-				className={`${
-					!media
-						? "max-w-[1340px] w-full ml-auto mr-auto"
-						: "max-w-[1000px] w-full ml-auto mr-auto"
-				}  `}
-			>
+			<div className="ml-auto mr-auto w-full max-w-[1340px]">
 				<main className="block m-16 ">
 					<section
 						id="1"
 						className={`${
 							!media
 								? "grid grid-cols-[1fr_minmax(1px,_2px)_1fr]auto-rows-auto gap-4 mb-16 "
-								: "block mt-8 "
+								: "block  "
 						}`}
 					>
-						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center mb-4 ">
+						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center mb-8 ">
 							Souvlakis/Wraps
 						</h1>
 						<div className="  w-full row-start-2 row-end-3 col-start-1 col-end-2 ">
@@ -211,11 +205,7 @@ const Menu = () => {
 
 					<section
 						id="2"
-						className={`${
-							!media
-								? "grid grid-cols-[1fr_minmax(1px,_2px)_1fr]auto-rows-auto gap-4 mb-16 "
-								: "block mt-16  "
-						}`}
+						className="grid grid-cols-[1fr_minmax(1px,_2px)_1fr] auto-rows-auto gap-4 mb-16 w-fit"
 					>
 						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Box Meals

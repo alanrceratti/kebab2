@@ -43,9 +43,7 @@ const Menu = () => {
 			</nav>
 			<div
 				className={`${
-					!media
-						? "max-w-[1340px] w-full ml-auto mr-auto"
-						: "max-w-[1000px] w-full ml-auto mr-auto"
+					!media ? "max-w-[1340px] w-full" : "max-w-[1000px] w-full"
 				}  `}
 			>
 				<main className="block m-16 ">
