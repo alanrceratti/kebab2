@@ -357,7 +357,7 @@ const Menu = () => {
 						>
 							<div className="flex justify-between font-inter text-base">
 								<h2 className="font-bold font-inter text-lg">
-									Meat Skewers on a stick&nbsp;
+									Meat Skewers on a stick
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(Chicken / Lamb / Pork Sausage)
 									</span>

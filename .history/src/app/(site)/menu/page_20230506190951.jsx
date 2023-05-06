@@ -20,27 +20,27 @@ const Menu = () => {
 			>
 				<nav>
 					<ul
-						className={`flex justify-between ${
-							!mobile ? "mx-40" : "mx-0"
+						className={`flex flex-wrap sm:justify-between justify-center ${
+							!mobile ? "mx-40" : "mx-4"
 						} mt-16 font-inter font-extrabold `}
 					>
 						<li>
-							<a href="#1" className="cursor-pointer m-4">
+							<a href="#1" className="cursor-pointer m-6">
 								Souvlakis/Wraps
 							</a>
 						</li>
 						<li>
-							<a href="#2" className="cursor-pointer  ">
+							<a href="#2" className="cursor-pointer m-6 ">
 								Box Meals
 							</a>
 						</li>
 						<li>
-							<a href="#3" className="cursor-pointer m-4">
+							<a href="#3" className="cursor-pointer m-6">
 								Extras/Sides
 							</a>
 						</li>
 						<li>
-							<a href="#4" className="cursor-pointer m-4">
+							<a href="#4" className="cursor-pointer m-6">
 								Drinks
 							</a>
 						</li>
@@ -63,12 +63,14 @@ const Menu = () => {
 								: "block mt-8 "
 						}`}
 					>
-						<h1 className="font-aclonica text-4xl row-start-1 row-end-2 sm:col-start-1 col-end-4 text-center mb-4 pt-10 md:text-6xl">
+						<h1 className="font-aclonica text-4xl row-start-1 row-end-2 sm:col-start-1 col-end-4 text-center mb-4 pt-10 md:text-6xl ">
 							Souvlakis/Wraps
 						</h1>
 						<div className="  w-full row-start-2 row-end-3 col-start-1 col-end-2 ">
-							<div className="flex justify-between font-inter text-base">
-								<h2>Chicken Souvlaki</h2>
+							<div className="block sm:flex  justify-between font-inter text-base">
+								<h2 className="font-bold font-inter">
+									Chicken Souvlaki
+								</h2>
 								<p>
 									Small - £5.90 / Medium - £7.90 / Giant -
 									£10.00
@@ -87,7 +89,7 @@ const Menu = () => {
 								media ? "mt-8" : ""
 							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
 						>
-							<div className="flex justify-between font-inter text-base">
+							<div className="block sm:flex justify-between font-inter text-base">
 								<h2>Lamb Souvlaki</h2>
 								<p>
 									Small - £5.90 / Medium - £7.90 / Giant -
@@ -107,7 +109,7 @@ const Menu = () => {
 								media ? "mt-8" : ""
 							} w-full row-start-4 row-end-5 col-start-1 col-end-2`}
 						>
-							<div className="flex justify-between font-inter text-base">
+							<div className="block sm:flex justify-between font-inter text-base">
 								<h2>Pork Sausage Souvlaki</h2>
 								<p>
 									Small - £5.90 / Medium - £7.90 / Giant -
@@ -128,7 +130,7 @@ const Menu = () => {
 								media ? "mt-8" : ""
 							} w-full row-start-5 row-end-6 col-start-1 col-end-2`}
 						>
-							<div className="flex justify-between font-inter text-base">
+							<div className="block sm:flex justify-between font-inter text-base">
 								<h2>Vegan Falafel Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
 							</div>
@@ -148,7 +150,7 @@ const Menu = () => {
 								media ? "mt-8" : ""
 							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
 						>
-							<div className="flex justify-between font-inter text-base">
+							<div className="block sm:flex justify-between font-inter text-base">
 								<h2>Vegetarian Halloumi Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
 							</div>
@@ -223,7 +225,7 @@ const Menu = () => {
 								: "block mt-16  "
 						}`}
 					>
-						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
+						<h1 className="font-aclonica text-4xl md:text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Box Meals
 						</h1>
 						<div
@@ -269,7 +271,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base ">
-								<div className="flex">
+								<div className="block sm:flex">
 									<h2>The Greek Box &nbsp; </h2>
 									<h3 className="text-sm mt-1 text-slate-300 ">
 										(Chicken & Lamb / Lamb & Sausage /
@@ -297,7 +299,7 @@ const Menu = () => {
 								: "block mt-16  "
 						}`}
 					>
-						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
+						<h1 className="font-aclonica text-4xl md:text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Extras/Sides
 						</h1>
 						<div
@@ -331,7 +333,7 @@ const Menu = () => {
 						>
 							<div className="flex justify-between font-inter text-base">
 								<h2>
-									Meast Skewers on a stick
+									Meat Skewers on a stick
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(Chicken / Lamb / Pork Sausage)
 									</span>
@@ -381,7 +383,7 @@ const Menu = () => {
 								: "block mt-16  "
 						} pb-12`}
 					>
-						<h1 className="font-aclonica text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
+						<h1 className="font-aclonica text-4xl md:text-6xl row-start-1 row-end-2 col-start-1 col-end-4 text-center ">
 							Drinks
 						</h1>
 						<div

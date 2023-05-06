@@ -90,9 +90,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
 						>
 							<div className="block sm:flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Lamb Souvlaki
-								</h2>
+							<h2 className="font-bold font-inter text-lg">Lamb Souvlaki</h2>
 								<p>
 									Small - £5.90 / Medium - £7.90 / Giant -
 									£10.00
@@ -112,9 +110,7 @@ const Menu = () => {
 							} w-full row-start-4 row-end-5 col-start-1 col-end-2`}
 						>
 							<div className="block sm:flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Pork Sausage Souvlaki
-								</h2>
+							<h2 className="font-bold font-inter text-lg">Pork Sausage Souvlaki</h2>
 								<p>
 									Small - £5.90 / Medium - £7.90 / Giant -
 									£10.00
@@ -135,9 +131,7 @@ const Menu = () => {
 							} w-full row-start-5 row-end-6 col-start-1 col-end-2`}
 						>
 							<div className="block sm:flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Vegan Falafel Souvlaki
-								</h2>
+								<h2>Vegan Falafel Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -157,9 +151,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
 						>
 							<div className="block sm:flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Vegetarian Halloumi Souvlaki
-								</h2>
+								<h2>Vegetarian Halloumi Souvlaki</h2>
 								<p>Small - £5.90 / Medium - £7.90</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -177,9 +169,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Medium Mixed Souvlaki
-								</h2>
+								<h2>Medium Mixed Souvlaki</h2>
 								<p>£7.90</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -197,9 +187,7 @@ const Menu = () => {
 							} w-full row-start-4 row-end-5 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Giant Mixed Souvlaki
-								</h2>
+								<h2>Giant Mixed Souvlaki</h2>
 								<p>£10.00</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -216,9 +204,7 @@ const Menu = () => {
 							} w-full row-start-5 row-end-6 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Mixed Vegetarian
-								</h2>
+								<h2>Mixed Vegetarian</h2>
 								<p>£7.90</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -248,9 +234,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									The Cypriot
-								</h2>
+								<h2>The Cypriot</h2>
 								<p>£7.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -267,9 +251,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base ">
-								<h2 className="font-bold font-inter text-lg">
-									The Pitta Burger
-								</h2>
+								<h2>The Pitta Burger</h2>
 								<p>£7.00</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -290,9 +272,7 @@ const Menu = () => {
 						>
 							<div className="flex justify-between font-inter text-base ">
 								<div className="block sm:flex">
-									<h2 className="font-bold font-inter text-lg">
-										The Greek Box &nbsp;
-									</h2>
+									<h2>The Greek Box &nbsp; </h2>
 									<h3 className="text-sm mt-1 text-slate-300 ">
 										(Chicken & Lamb / Lamb & Sausage /
 										Chicken & Sausage)
@@ -328,9 +308,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base ">
-								<h2 className="font-bold font-inter text-lg">
-									Halloumi Fries
-								</h2>
+								<h2>Halloumi Fries</h2>
 								<p>£5.00</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 w-auto dark:bg-white" />
@@ -342,9 +320,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Chips Large
-								</h2>
+								<h2>Chips Large</h2>
 								<p>£3.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -356,8 +332,8 @@ const Menu = () => {
 							} w-full row-start-4 row-end-5 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Meat Skewers on a stick&nbsp;
+								<h2>
+									Meat Skewers on a stick
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(Chicken / Lamb / Pork Sausage)
 									</span>
@@ -376,9 +352,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Tzatziki dip
-								</h2>
+								<h2>Tzatziki dip</h2>
 								<p>£2.00</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -389,8 +363,8 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Other dips&nbsp;
+								<h2>
+									Other dips
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(ketchup, mayo, sweet chilly, hot
 										chilly)
@@ -418,9 +392,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base ">
-								<h2 className="font-bold font-inter text-lg">
-									Coca Cola
-								</h2>
+								<h2>Coca Cola</h2>
 								<p>£1.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 w-auto dark:bg-white" />
@@ -432,9 +404,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-1 col-end-2`}
 						>
 							<div className="flex justify-between font-inter text-base ">
-								<h2 className="font-bold font-inter text-lg">
-									Diet Coke
-								</h2>
+								<h2>Diet Coke</h2>
 								<p>£1.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white " />
@@ -448,9 +418,7 @@ const Menu = () => {
 							} w-full row-start-2 row-end-3 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Tango Orange
-								</h2>
+								<h2>Tango Orange</h2>
 								<p>£1.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />
@@ -461,9 +429,7 @@ const Menu = () => {
 							} w-full row-start-3 row-end-4 col-start-3 col-end-4`}
 						>
 							<div className="flex justify-between font-inter text-base">
-								<h2 className="font-bold font-inter text-lg">
-									Water
-								</h2>
+								<h2>Water</h2>
 								<p>£1.50</p>
 							</div>
 							<hr class="h-px my-0 bg-gray-200 border-0 dark:bg-white" />

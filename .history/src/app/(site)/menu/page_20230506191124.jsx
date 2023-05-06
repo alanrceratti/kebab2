@@ -291,7 +291,7 @@ const Menu = () => {
 							<div className="flex justify-between font-inter text-base ">
 								<div className="block sm:flex">
 									<h2 className="font-bold font-inter text-lg">
-										The Greek Box &nbsp;
+										The Greek Box &nbsp;{" "}
 									</h2>
 									<h3 className="text-sm mt-1 text-slate-300 ">
 										(Chicken & Lamb / Lamb & Sausage /
@@ -357,7 +357,7 @@ const Menu = () => {
 						>
 							<div className="flex justify-between font-inter text-base">
 								<h2 className="font-bold font-inter text-lg">
-									Meat Skewers on a stick&nbsp;
+									Meat Skewers on a stick
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(Chicken / Lamb / Pork Sausage)
 									</span>
@@ -390,7 +390,7 @@ const Menu = () => {
 						>
 							<div className="flex justify-between font-inter text-base">
 								<h2 className="font-bold font-inter text-lg">
-									Other dips&nbsp;
+									Other dips
 									<span className="font-inter font-base text-[14px] text-slate-300">
 										(ketchup, mayo, sweet chilly, hot
 										chilly)
