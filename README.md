@@ -1,6 +1,6 @@
 # [Greek Bites - Online Offers](https://kebab2.vercel.app)
 
-![Screenshot 2023-04-25 134855](https://user-images.githubusercontent.com/105820012/234281285-34e587d4-78af-4e35-82d8-3b7361f389c6.png)
+![Screenshot 2023-05-09 195331](https://github.com/alanrceratti/kebab/assets/105820012/5e5f5ca4-c6f0-4a64-8377-648f070cee9e)
 
 This was a personal project to apply new knowledge dealing with a CMS and also practice Git Versioning in a team.
 
@@ -12,7 +12,8 @@ To accomplish this, we designed the web-site in Figma, carefully chosing the ele
 
 The site allows users to go through all the quotes within a selected category without
 
-https://user-images.githubusercontent.com/105820012/234282098-3cef3355-b90f-44ed-a455-d56fe3b3c716.mp4
+
+https://github.com/alanrceratti/kebab/assets/105820012/3451581c-54cf-42b0-8101-799e986086e1
 
 ## Tech Stack
 
