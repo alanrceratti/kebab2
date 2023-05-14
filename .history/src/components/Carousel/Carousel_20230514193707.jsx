@@ -24,13 +24,13 @@ const Carousel = ({ imageSrc, imageAlt, title, title2, description }) => {
 						{title}
 						<span className="text-green">{title2}</span>
 					</h1>
-					<p className="text-base md:text-xl pr-4 w-full max-w-[320px] sm:max-w-[500px]">
+					<p className="text-sm md:text-xl pr-4 w-full max-w-[320px] sm:max-w-[500px]">
 						{description}
 					</p>
 
 					<div className="relative top-6 sm:w-[500px] w-[300px] block gap-4 text-center ">
 						<Link href={"/menu"}>
-							<button className="h-12 w-32 sm:h-16 sm:w-44  bg-green text-black font-bold transition-all ease-in-out duration-500 hover:bg-black hover:border hover:border-green hover:text-green">
+							<button className="h-12 w-32 sm:h-52 sm:w-60  bg-green text-black font-bold transition-all ease-in-out duration-500 hover:bg-black hover:border hover:border-green hover:text-green">
 								VIEW MENU
 							</button>
 						</Link>

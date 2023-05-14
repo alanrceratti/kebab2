@@ -24,7 +24,7 @@ const Carousel = ({ imageSrc, imageAlt, title, title2, description }) => {
 						{title}
 						<span className="text-green">{title2}</span>
 					</h1>
-					<p className="text-base md:text-xl pr-4 w-full max-w-[320px] sm:max-w-[500px]">
+					<p className="text-sm md:text-xl pr-4 w-full max-w-[320px] sm:max-w-[500px]">
 						{description}
 					</p>
 
